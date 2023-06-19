@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10" viewBox="0 0 550 600">
+  <path d="M0 0h550v600H0z" style="fill:none"/>
+  <clipPath id="a">
+    <path d="M0 0h550v600H0z"/>
+  </clipPath>
+  <g clip-path="url(#a)">
+    <path d="M41.6668.01588h466.66704c23.01251841 0 41.6667 18.6666816 41.6667 41.6667v516.66708c0 23.0000184-18.65418159 41.6667-41.6667 41.6667H41.6668c-23.01251841 0-41.6667-18.6666816-41.6667-41.6667V41.68258c0-23.0000184 18.65418159-41.6667 41.6667-41.6667Z"/>
+    <path d="M0 0c4.929 3.838 9.858 5.757 14.787 5.757S24.645 3.838 29.574 0" style="fill:none;fill-rule:nonzero;stroke:#fff;stroke-width:7.04px" transform="translate(196.072 109.571) scale(8.33333)"/>
+    <path d="M0 0c3.857 2.985 7.715 4.478 11.572 4.478 3.858 0 7.715-1.493 11.573-4.478" style="fill:none;fill-rule:nonzero;stroke:#fff;stroke-width:7.04px" transform="translate(62.0523 305.907) scale(8.33333)"/>
+    <path d="M0 0c5.251 2.985 10.501 4.478 15.751 4.478 5.251 0 10.501-1.493 15.752-4.478" style="fill:none;fill-rule:nonzero;stroke:#fff;stroke-width:7.04px" transform="matrix(8.33333 0 0 -8.33333 228.218 322.793)"/>
+    <path d="M0 .5h35.804" style="fill:none;fill-rule:nonzero;stroke:#fff;stroke-width:7.09px" transform="matrix(-5.90744 5.87764 5.87764 5.90744 437.086 109.11)"/>
+    <text x="58" y="156" style="font-family:system-ui,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Oxygen,Ubuntu,Cantarell,&quot;Open Sans&quot;,&quot;Helvetica Neue&quot;,sans-serif;font-weight:400;font-size:24px;fill:#fff" transform="translate(-125 -125) scale(4.16667)">zugriff</text>
+  </g>
+</svg>
