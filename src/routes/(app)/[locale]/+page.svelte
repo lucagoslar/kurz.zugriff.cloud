@@ -11,6 +11,7 @@
 	let created = false;
 	let exists = false;
 	let error = false;
+	let loading = false;
 
 	async function createReference() {
 		if (!$form.valid) return;
@@ -20,9 +21,13 @@
 		created = false;
 		exists = false;
 		error = false;
+		loading = true;
 
 		exists = (await client().short.exists.query($form.values.reference as string)).valueOf();
-		if (exists) return;
+		if (exists) {
+			loading = false;
+			return;
+		}
 
 		try {
 			await client().short.register.mutate({
@@ -39,6 +44,8 @@
 			console.log(e);
 			error = true;
 		}
+
+		loading = false;
 	}
 
 	const form = useForm();
@@ -77,7 +84,7 @@
 		</div>
 	</div>
 
-	<Button type="submit">{$LL.Locale.form.register()}</Button>
+	<Button type="submit" disabled={loading}>{$LL.Locale.form.register()}</Button>
 
 	<div class="result">
 		{#if exists}
