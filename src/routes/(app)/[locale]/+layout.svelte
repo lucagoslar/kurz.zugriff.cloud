@@ -1,8 +1,6 @@
 <script lang="ts">
 	import Logo from '$lib/components/atoms/Logo/Logo.svelte';
 	import type { LayoutData } from './[reference]/$types';
-
-	export let data: LayoutData;
 </script>
 
 <main>
