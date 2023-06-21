@@ -8,13 +8,7 @@ export const load: LayoutServerLoad = async (event) => {
 	const { success } = slug.safeParse(event.params.reference);
 	if (!success) throw error(400);
 
-	let reference = await prisma.reference.findUnique({
-		where: { slug: event.params.reference }
-	});
-
-	if (!reference) throw error(404);
-
 	return {
-		reference
+		slug: event.params.reference
 	};
 };

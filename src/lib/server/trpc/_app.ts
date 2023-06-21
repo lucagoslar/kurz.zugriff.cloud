@@ -28,6 +28,9 @@ export const appRouter = router({
 					select: { id: true }
 				})
 			);
+		}),
+		find: publicProcedure.input(slug).query(async ({ input }) => {
+			return await prisma.reference.findUnique({ where: { slug: input }, select: { url: true } });
 		})
 	})
 });
