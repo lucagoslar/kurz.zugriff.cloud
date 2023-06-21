@@ -1,9 +1,10 @@
 <script lang="ts">
+	export let disabled: boolean = false;
 	export let autogrow: boolean = false;
 	export let type: 'button' | 'submit' | 'reset' | null | undefined = 'button';
 </script>
 
-<button on:click {type} class:autogrow><slot /></button>
+<button on:click {type} class:autogrow {disabled}><slot /></button>
 
 <style lang="scss">
 	@use '$styles/a11y.scss' as a11y;
@@ -26,6 +27,13 @@
 
 		&.autogrow {
 			width: 100%;
+		}
+
+		&:disabled {
+			cursor: not-allowed;
+
+			background-color: black;
+			color: white;
 		}
 	}
 </style>

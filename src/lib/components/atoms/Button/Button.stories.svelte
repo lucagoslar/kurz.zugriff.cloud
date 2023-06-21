@@ -17,4 +17,4 @@
 	</Button>
 </Template>
 
-<Story name="Default" />
+<Story name="Default" args={{ disabled: false }} />
